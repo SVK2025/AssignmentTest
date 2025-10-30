@@ -1,28 +1,30 @@
-# Batch Processing API Solution
+﻿# Batch Processing API Solution
 
 A high-performance .NET 9 solution demonstrating optimized batch processing capabilities through a Web API. This solution showcases modern C# 13.0 features and best practices for handling concurrent processing requests with GPU optimization.
+
+**Created**: 29 October 2025
+**Last Updated**: 30 October 2025
 
 ## Solution Structure
 
 ```
 AssignmentTest/
-??? AssignmentTest/  # Main API Project
-?   ??? Controllers/
-?   ?   ??? ProcessController.cs # API endpoints implementation
-?   ??? Models/
-?   ?   ??? DataObject.cs       # Input model with Id and Input string
-?   ?   ??? Result.cs        # Output model with Id and processed Output
-?   ??? Services/
-?   ?   ??? BatchProcessingService.cs # Core batching logic
-?   ?   ??? DataProcessor.cs    # Data processing implementation
-?   ??? Properties/
-?     ??? launchSettings.json # API launch configuration
-??? TestProject1/  # Test Project
-    ??? ProcessControllerTests.cs # API endpoint tests
+├── AssignmentTest/            # Main API Project
+│   ├── Controllers/
+│   │   └── ProcessController.cs # API endpoints implementation
+│   ├── Models/
+│   │   ├── DataObject.cs     # Input model with Id and Input string
+│   │   └── Result.cs    # Output model with Id and processed Output
+│   ├── Services/
+│   │   ├── BatchProcessingService.cs # Core batching logic
+│   │   └── DataProcessor.cs    # Data processing implementation
+│   └── Properties/
+│       └── launchSettings.json # API launch configuration
+└── TestProject1/            # Test Project
+    └── ProcessControllerTests.cs # API endpoint tests
 ```
 
 ## Technical Stack
-
 - **.NET 9.0**: Latest .NET version with enhanced performance
 - **C# 13.0**: Utilizing modern language features
 - **ASP.NET Core Web API**: For RESTful endpoint implementation
@@ -146,7 +148,3 @@ Launch settings and API configuration can be modified in:
 
 For API support, contact:
 - Email: support@example.com
-
-## License
-
-[Specify your license here]
